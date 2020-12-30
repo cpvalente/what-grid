@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:display=swap');
+
+body, html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    color: #111;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 100;
+    letter-spacing: .1em;
+    word-spacing:0.05em;
+}
+
+h2 {
+    vertical-align: top;
+    font-size:  1.4em;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    word-spacing:0.05em;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+footer {
+    text-align: right;
+}
+
+nav {
+    text-align: center;
+}
+
+.card {
+    word-wrap: break-word;
+}
+
+.white {
+    color: #fffff8;
+}
+
+.card > .cat {
+    font-size: .7em;
+    color: #F4A261;
+}
+
+.card > .sub {
+    font-weight: 200;
+}
+
+.card > .read {
+    font-size: .7em;
+    color:#264653;
+}
+
+.centered {
+    text-align: center;
+}
+
+.tight {
+    letter-spacing: -.05em;
+    word-spacing:-0.05em;
+}

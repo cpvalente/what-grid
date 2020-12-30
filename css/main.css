@@ -1,4 +1,118 @@
-@import "header.css";
-@import "footer.css";
 @import "typography.css";
 
+/* 
+colour1 #264653
+colour2 #2A9D8F
+colour3 #E9C46A
+colour4 #F4A261
+colour5 #E76F51 
+*/
+
+.body, html {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fffff8;
+}
+
+main {
+    background-image: url("../assets/images/bg-white.jpg");
+    background-size: stretch;
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%; */
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "flex-top"
+    "flex-mid"
+    "flex-bottom";
+    margin: 0;
+
+}
+
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: auto;
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.row::-webkit-scrollbar { display: none;}
+
+.card { 
+    opacity: 80%;
+    padding: 8px;
+    flex: 1 0 47%;
+    height: 32vh;
+    box-sizing: border-box;
+    border: white 1px dashed;
+    overflow-wrap: break-word;
+
+    display: grid;
+    grid-template-rows: 10% 20% 60% 10%;
+    grid-template-areas:
+    "category"
+    "title"
+    "sub"
+    "read";
+
+    justify-content: center;
+    align-items:center;
+    transition: .3s;
+}
+
+.card.main {
+    background-color: #fffff8;
+}
+
+.card > .cat {
+    grid-area: category;
+}
+
+.card > .title {
+    grid-area: title;
+}
+
+.card > .sub {
+    grid-area: sub;
+}
+
+.card > .read {
+    grid-area: read;
+}
+
+.card > .blog-title {
+    grid-area:category / category / read / read;
+}
+
+footer {
+    background-color: #111;
+}
+
+footer > .blog-footer {
+    grid-area:category / category / sub / sub;
+}
+
+.card > .social {
+    grid-area: read;
+}
+
+.social-icons > img{
+    width: 20px;
+}
+
+.social-icons > img:hover {
+    filter: drop-shadow(0 2px 5px white);
+}
+
+.card:hover { 
+    opacity: 100%;
+    transition: .3s;
+}
