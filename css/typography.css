@@ -48,12 +48,12 @@ nav {
     color: #fffff8;
 }
 
-.card > .cat {
+.cat {
     font-size: .7em;
     color: #F4A261;
 }
 
-.card > .sub {
+.sub {
     font-weight: 200;
 }
 
@@ -70,3 +70,25 @@ nav {
     letter-spacing: -.05em;
     word-spacing:-0.05em;
 }
+
+
+@media only screen and (min-width: 768px) {
+    
+    body, html {
+        font-size: 18px;
+    }
+
+    article {
+        font-size: 20px;
+        line-height: 2em;
+    }
+
+    article > h1 { 
+        font-size: 2.4em;
+    }
+    
+    article > h2 {
+        font-size:  2em;
+        font-weight: 400;
+    }
+  }

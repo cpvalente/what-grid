@@ -1,27 +1,14 @@
 @import "typography.css";
 
-/* 
-colour1 #264653
-colour2 #2A9D8F
-colour3 #E9C46A
-colour4 #F4A261
-colour5 #E76F51 
-*/
 
 .body, html {
     margin: 0;
     width: 100%;
     height: 100vh;
-    background-color: #fffff8;
+    background-color: #fff;
 }
 
 main {
-    background-image: url("../assets/images/bg-white.jpg");
-    background-size: stretch;
-    /* background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%; */
-
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -52,7 +39,7 @@ main {
     flex: 1 0 47%;
     height: 32vh;
     box-sizing: border-box;
-    border: white 1px dashed;
+    border: #fffffa 1px solid;
     overflow-wrap: break-word;
 
     display: grid;
@@ -64,12 +51,13 @@ main {
     "read";
 
     justify-content: center;
-    align-items:center;
+    align-items: center;
     transition: .3s;
 }
 
 .card.main {
-    background-color: #fffff8;
+    background-color: #fffffa;
+    border-color: #111;
 }
 
 .card > .cat {
@@ -116,3 +104,16 @@ footer > .blog-footer {
     opacity: 100%;
     transition: .3s;
 }
+
+@media only screen and (min-width: 768px) {
+    .row {
+        justify-content: center;
+    }
+
+    .card { 
+        flex: 0 0 32vh;
+    }
+    .social-icons > img{
+        width: 25px;
+    }
+  }

@@ -4,14 +4,15 @@ body, html {
     margin: 0;
     width: 100%;
     height: auto;
-    background-image: url("../assets/images/bg-white.jpg");
-    background-size: stretch;
 }
 
 main {
     margin: 0 auto;
     padding: 1em 0;
     width: 90%;
+
+    /* Large Screens */
+    max-width: 1280px;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -42,12 +43,8 @@ header > img {
     height: auto;
 }
 
-header > h1 {
-    padding: 0 5px;
-}
-
-.post-main {
-    padding: 5px;
+header > h1, .post-main {
+    padding: 0 .3em;
 }
 
 nav {
@@ -97,3 +94,16 @@ button:active {
     border-color:#F4A261; 
     transform: translateY(1px);
 }
+
+
+@media only screen and (min-width: 768px) {
+    header > h1, .post-main {
+        padding: 0 2em;
+    }
+
+    button {
+        width: 3em;
+        height: 3em;
+        border-radius: 1.5em;
+    }
+  }
