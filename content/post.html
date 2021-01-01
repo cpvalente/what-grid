@@ -1,6 +1,7 @@
 <!doctype html>
 
-<html>
+
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,30 +10,133 @@
         <meta name="author" content="Carlos Valente">
         <meta name="description" content="Personal development blog">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="../assets/images/favicon.png">
         <link rel="stylesheet" href="../css/post.css">
     </head>
     <body>
         <main>
             <article class="post-container">
-                <header>
+
+                <!-- Header -->
+                <header class="row full">
                     <!-- Add fallback -->
-                    <img src="../assets/images/post-header.jpg"/>
-                    <h1 class="card-heading">when Gregor Samsa woke from troubled dreams</h1>
+                    <img src="../assets/images/circular/1 overview.png"/>
+                    <h1 class="card-heading">Circular</h1>
                 </header>
-                <div class="post-main">
-                    <h2 class="sub">But I must explain to you how all this mistaken</h2>
-                    <!-- TODO: Add some type with images and whatnot -->
+
+                <!-- Main -->
+                <div class="row full">
                     <p class="cat orange">Light</p>
+                    <h2 class="sub">Circular is a project for a small format indoor lamp CNC'ed from a single block of wood.
+                        A simple, naked optics system built into a wooden circle. </h2>
+                    <!-- TODO: Add some type with images and whatnot -->
+                    <small class="tag orange">Birch</small>
+                    <small class="tag orange">Alluminium</small>
+                    <small class="tag orange">Acrylic</small>
+                    <small class="tag orange">Electronics</small>
+                </div>
+
+                <!-- Row - Overview -->
+                <h3 class="row-title">Overview</h3>
+                <div class="row half">
+                    <p> 
+                        There are three wooden parts to the project, a base, a mirror assembly and a circle where everything connects. 
+                        Additionaly wooden details provide enclosers for lamp and dimmer.
+                        All parts are machines from wood. For contrast, some of the parts could be stained or treated similar to the render.
+                    </p>
+                </div>           
+                
+                <div class="row half">
+                    <img src="../assets/images/circular/8 exploded.jpg" alt="Exploded diagram" class="row half"/>
+                </div>
+
+                <!-- Row - Assembly -->
+                <div class="row half">
+                    <img src="../assets/images/circular/7 assembly.png" alt="Assembly elements"/>
+                    <small>
+                        Assembly elements, from left to right: <br>
+                        Mirror, dimmer, lamp, LED engine, base
+                    </small>
+                </div>
+                <div class="row half">
+                    <p>There are 5 parts in the assembly as seen in image to the left.
+                        All electronics parts except the dimmer are off-the-shelve items.</p>
+                        <ul><a href="#lamp">Wooden Circle</a></ul>
+                        <ul><a href="#lamp">Lamp Base</a></ul>
+                        <ul><a href="#light">Light Engine</a></ul>
+                        <ul><a href="#dimmer">Dimmer</a></ul>
+                        <ul><a href="#mirror">Mirror Assembly</a></ul>
                     <p>
-                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee 
+                </div>
+
+                <!-- Row - Lamp and base -->
+                <h3 class="row-title" id="lamp">Lamp and base</h3>
+                <div class="row third">
+                    <p>
+                        The lamp main frame <i>(left image)</i> is CNCed from a single piece of wood.
+                        At the front there is a machined inset for the PCB insert <i>(bottom left)</i>. 
+                        The holes for the light <i>(bottom left) </i>and mirror assembly <i>(top right)</i> have to be done separetely.
+                        Potentially it would be possible to machine two parts jig for this operation out of the same wood block.
+                    </p>
+                    <p>
+                        The base of the lamp is CNCed from the same wooden block. There should be a method for fixing
+                    </p>
+                </div>
+                <div class="row third">
+                    <img src="../assets/images/circular/9 circle.jpg" alt="Wooden circular main frame"/>
+                    <small>Wooden circular main frame</small>
+                </div>
+                <div class="row third">
+                    <img src="../assets/images/circular/10 base.jpg" alt="Lamp base"/>
+                    <small>Lamp base</small>
+                </div>
+        
+                <!-- Row - Light Source -->
+                <h3 class="row-title" id="light">Light - Oslon LED Engine</h3>
+                <div class="row half">
+                    <img src="../assets/images/circular/11 light.jpg" alt="Light Source"/>
+                    <small>Oslon LED engine as light source</small>
+                </div>
+                <div class="row half">
+                    <p>
+                        The light source is a OSLONeye LED kit fitted with a 11 degree lens.
+                        The LED source is a Oslon 1 series in Warm White (3000k) with expected 111 lumens at 350mA.
+                    </p>
+                </div>
+        
+                <!-- Row - Dimmer -->
+                <h3 class="row-title" id="dimmer">Dimmer</h3>
+                <div class="row half">
+                    <p>
+                        The dimmer will be designed in a custom PCB for the project. 
+                        The potentiometer attaches to the wooden frame (hole drilled by hand) 
+                        and a wooden cap covers the back of the PCB outwards the lamp.
+                    </p>
+                </div>
+                <div class="row half">
+                    <img src="../assets/images/circular/5 dimmer.jpg" alt="Dimmer"/>
+                    <small>Dimmer assembly</small>
+                </div>
+        
+                <!-- Row - Mirror -->
+                <h3 class="row-title" id="mirror">Mirror Assembly</h3>
+                <div class="row half">
+                    <img src="../assets/images/circular/14 mirror placement.jpg" alt="Mirror Assembly"/>
+                    <small>Mirror assembly installation</small>
+                </div>
+                <div class="row half">
+                    <p>
+                        The mirror assembly is probably the trickiest part of the design. 
+                        The idea is to have a mechanism to allow 2 degrees of movement to the mirror, meaning the light can be bounced around the lamp. <br>
+                        The convex mirror is a off-the-shelve item 4.8mm in diameter.
                     </p>
                 </div>
             </article>
+    
             <nav>
                 <a href="../index.html"><button>✖</bold></button></a>
             </nav>
-            <div class="effect fx-top"></div>
-            <div class="effect fx-bottom"></div>
+
         </main>
     </body>
 </html>
