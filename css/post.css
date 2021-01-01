@@ -4,6 +4,7 @@ body, html {
     margin: 0;
     width: 100%;
     height: auto;
+    scroll-behavior: smooth;
 }
 
 main {
@@ -11,39 +12,51 @@ main {
     padding: 1em 0;
     width: 90%;
 
-    /* Large Screens */
-    max-width: 1280px;
-
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:  1fr 2.5em 8px 3px;
-    grid-template-areas: 
-    "post-article"
-    "post-nav"
-    "post-fx1"
-    "post-fx2";
-}
+    grid-template-rows: 1fr 3em;
+    grid-template-areas:
+    "post-main"
+    "post-nav";
 
-article {
-    border-radius: 3px 3px 0 0;
+    /* Large Screens */
+    max-width: 1280px;
 }
 
 .post-container {
-    grid-area: post-article;
+    grid-area: post-main;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
     background-color: #fffffc;
+    border-radius: 3px 3px 0 0;
 }
 
-header > img {
-    border-radius: 3px 3px 0 0;
+h3.row-title {
+    flex: 1 1 100%;
+}
+
+.row.full {
+    flex: 1 1 100%;
+}
+
+.row.half {
+    flex: 1 1 45%;
+    min-width: 250px;
+}
+
+.row.third {
+    flex: 1 1 25%;
+    min-width: 200px;
+}
+
+img {
     max-width: 100%;
     height: auto;
 }
 
-header > h1, .post-main {
+header > h1, article > .row {
     padding: 0 .3em;
 }
 
@@ -53,26 +66,6 @@ nav {
     border-radius: 0 0 2px 2px;
 }
 
-.effect {
-    margin-left: auto ;
-    margin-right: auto ;
-    border-radius: 0 0 2px 2px;
-}
-
-.fx-top {
-    grid-template-areas: post-fx1;
-    width: 80%;
-    background-color: #2A9D8F;
-    opacity: 60%;
-
-}
-
-.fx-bottom {
-    grid-template-areas: post-fx2;
-    width: 60%;
-    background-color: #264653;
-    opacity: 60%;
-}
 
 button {
     background-color: #fffffa;
