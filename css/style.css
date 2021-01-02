@@ -33,6 +33,18 @@ button:hover {
     transition: .5s;
 }
 
+.tag {
+    padding-left: .7em;
+    padding-right: .7em;
+    background-color: #fff;
+    border-radius: 0.2em;
+    white-space: nowrap;
+    margin-top: 10px;
+    border: 0.1px;
+    border-style: solid;
+    line-height: 1.5em;
+}
+
 .social-icons > img {
     width: 20px;
 }
@@ -40,6 +52,7 @@ button:hover {
 .social-icons > img:hover {
     filter: drop-shadow(0 2px 5px #fff);
 }
+
 /* --------------- Large Screens --------------*/
 
 @media only screen and (min-width: 768px) {

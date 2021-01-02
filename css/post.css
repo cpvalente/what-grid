@@ -38,6 +38,10 @@ main {
     flex: 1 1 100%;
 }
 
+.card-heading {
+    margin: 0;
+}
+
 .row-full {
     flex: 1 1 100%;
 }
