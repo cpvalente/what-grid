@@ -1,11 +1,16 @@
 @import "typography.css";
 
-body, html {
+/* -------------- General Rules ---------------*/
+
+body,
+html {
     margin: 0;
     width: 100%;
     height: auto;
     scroll-behavior: smooth;
 }
+
+/* ----------------- Layout -------------------*/
 
 main {
     margin: 0 auto;
@@ -26,20 +31,22 @@ main {
     border-radius: 3px 3px 0 0;
 }
 
-h3.row-title {
+/* ---------- Design Specific - Post ----------*/
+
+.row-title {
     flex: 1 1 100%;
 }
 
-.row.full {
+.row-full {
     flex: 1 1 100%;
 }
 
-.row.half {
+.row-half {
     flex: 1 1 45%;
     min-width: 250px;
 }
 
-.row.third {
+.row-third {
     flex: 1 1 25%;
     min-width: 200px;
 }
@@ -50,7 +57,7 @@ img {
 }
 
 article > * {
-    padding: 0 .3em;
+    padding: 0 0.3em;
 }
 
 nav {
@@ -67,7 +74,7 @@ nav {
 button {
     float: right;
     margin-right: 2em;
-    background-color: #fffffa;
+    background-color: #fffffc;
     color: #f95959;
     border: 1px solid #f95959;
     border-radius: 1em;
@@ -79,30 +86,32 @@ button:hover {
     background-color: #f95959;
     color: #fff;
     border-color:#f95959;
-    transition: .5s; 
+    transition: .5s;
 }
 
-.bottom-line { 
-    border-width: 0 0 0 0;
-    border-bottom: .5px solid #F95959; 
+.bottom-line {
+    border-width: 0;
+    border-bottom: 0.5px solid #F95959;
 }
 
-.left-line { 
-    border-width: 0 0 0 0;
-    border-left: .5px solid #F95959; 
+.left-line {
+    border-width: 0;
+    border-left: 0.5px solid #F95959;
 }
 
 .tag {
-    padding-left: .7em;
-    padding-right: .7em;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
     background-color: #fff;
-    border-radius: .2em;
+    border-radius: 0.2em;
     white-space: nowrap;
     margin-top: 10px;
     border: 0.1px;
-    border-style: solid; 
+    border-style: solid;
     line-height: 1.5em;
 }
+
+/* --------------- Large Screens --------------*/
 
 @media only screen and (min-width: 768px) {
     article {
