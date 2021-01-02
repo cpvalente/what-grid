@@ -12,19 +12,12 @@ main {
     padding: 1em 0;
     width: 90%;
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3em;
-    grid-template-areas:
-    "post-main"
-    "post-nav";
-
     /* Large Screens */
     max-width: 1280px;
 }
 
 .post-container {
-    grid-area: post-main;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -56,47 +49,63 @@ img {
     height: auto;
 }
 
-header > h1, article > .row {
+article > * {
     padding: 0 .3em;
 }
 
 nav {
-    grid-area: post-nav;
-    background-color: #fffffc;
-    border-radius: 0 0 2px 2px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    background-color: rgba(255,255,255, .8);
 }
 
 
 button {
+    float: right;
+    margin-right: 2em;
     background-color: #fffffa;
-    color: #E76F51;
-    border: 1px solid #E76F51;
+    color: #f95959;
+    border: 1px solid #f95959;
     border-radius: 1em;
-    width: 2em;
-    height: 2em;
+    width: 6em;
+    height: 1.5em;
 }
 
 button:hover {
-    color: #F4A261;
-    border-color:#F4A261; 
+    background-color: #f95959;
+    color: #fff;
+    border-color:#f95959;
+    transition: .5s; 
 }
 
-button:active {
-    background-color: #E76F51;
-    color: #fffffa;
-    border-color:#F4A261; 
-    transform: translateY(1px);
+.bottom-line { 
+    border-width: 0 0 0 0;
+    border-bottom: .5px solid #F95959; 
 }
 
+.left-line { 
+    border-width: 0 0 0 0;
+    border-left: .5px solid #F95959; 
+}
+
+.tag {
+    padding-left: .7em;
+    padding-right: .7em;
+    background-color: #fff;
+    border-radius: .2em;
+    white-space: nowrap;
+    margin-top: 10px;
+    border: 0.1px;
+    border-style: solid; 
+    line-height: 1.5em;
+}
 
 @media only screen and (min-width: 768px) {
-    header > h1, .post-main {
+    article {
         padding: 0 2em;
-    }
-
-    button {
-        width: 3em;
-        height: 3em;
-        border-radius: 1.5em;
     }
   }

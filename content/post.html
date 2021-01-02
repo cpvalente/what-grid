@@ -1,5 +1,6 @@
 <!doctype html>
-
+<!-- TODO: How does h1 look smaller than h2 -->
+<!-- TODO: Whats the deal with the text not taking line weight -->
 
 <html lang="en">
     <head>
@@ -15,25 +16,29 @@
     </head>
     <body>
         <main>
+            <nav>
+                <a href="../index.html"><button>home</button></a>
+            </nav>
+
             <article class="post-container">
 
                 <!-- Header -->
                 <header class="row full">
                     <!-- Add fallback -->
                     <img src="../assets/images/circular/1 overview.png"/>
-                    <h1 class="card-heading">Circular</h1>
+                    <span class="cat red">Light</span>
+                    <h1 class="card-heading bottom-line">Circular</h1>
                 </header>
 
                 <!-- Main -->
                 <div class="row full">
-                    <p class="cat orange">Light</p>
                     <h2 class="sub">Circular is a project for a small format indoor lamp CNC'ed from a single block of wood.
                         A simple, naked optics system built into a wooden circle. </h2>
                     <!-- TODO: Add some type with images and whatnot -->
-                    <small class="tag orange">Birch</small>
-                    <small class="tag orange">Alluminium</small>
-                    <small class="tag orange">Acrylic</small>
-                    <small class="tag orange">Electronics</small>
+                    <small class="tag">Birch</small>
+                    <small class="tag">Alluminium</small>
+                    <small class="tag">Acrylic</small>
+                    <small class="tag">Electronics</small>
                 </div>
 
                 <!-- Row - Overview -->
@@ -61,11 +66,11 @@
                 <div class="row half">
                     <p>There are 5 parts in the assembly as seen in image to the left.
                         All electronics parts except the dimmer are off-the-shelve items.</p>
-                        <ul><a href="#lamp">Wooden Circle</a></ul>
-                        <ul><a href="#lamp">Lamp Base</a></ul>
-                        <ul><a href="#light">Light Engine</a></ul>
-                        <ul><a href="#dimmer">Dimmer</a></ul>
-                        <ul><a href="#mirror">Mirror Assembly</a></ul>
+                        <ul><a class="arrow" href="#lamp">Wooden Circle</a></ul>
+                        <ul><a class="arrow" href="#lamp">Lamp Base</a></ul>
+                        <ul><a class="arrow" href="#light">Light Engine</a></ul>
+                        <ul><a class="arrow" href="#dimmer">Dimmer</a></ul>
+                        <ul><a class="arrow" href="#mirror">Mirror Assembly</a></ul>
                     <p>
                 </div>
 
@@ -132,11 +137,6 @@
                     </p>
                 </div>
             </article>
-    
-            <nav>
-                <a href="../index.html"><button>✖</bold></button></a>
-            </nav>
-
         </main>
     </body>
 </html>

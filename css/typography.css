@@ -6,30 +6,62 @@ body, html {
     font-size: 16px;
     text-align: left;
     color: #111;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: none;
 }
 
-h1, h2 {
-    font-family: 'Roboto', sans-serif;
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
     font-size: 2em;
     font-weight: 100;
-    letter-spacing: .1em;
-    word-spacing:0.05em;
+    letter-spacing: 0.05em;
+    word-spacing: 0.05em;
+}
+
+header > h1
+{    
+    font-weight: 600;
+    font-size: 3.4em;
 }
 
 h2 {
-    vertical-align: top;
     font-size:  1.4em;
-    font-weight: 400;
+    font-weight: 100;
     letter-spacing: 0.02em;
     word-spacing:0.05em;
+    color: #444;
+}
+
+h3 {
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+p {
+    font-weight: 300;
+}
+
+.row > p {
+    text-indent: 1.5em;
+    line-height: 1.5em;
 }
 
 a {
     color: inherit;
     text-decoration: inherit;
+}
+
+a:hover {
+    color: #f95959;
+    transition: .2;
+}
+
+.arrow::after { 
+    content: "  \2197";
 }
 
 footer {
@@ -38,6 +70,17 @@ footer {
 
 nav {
     text-align: center;
+}
+
+small {
+    color:#666;
+    font-weight: 100;
+    font-size: 0.7em;
+}
+
+strong {
+    color: #222;
+    font-weight: 600;
 }
 
 .card {
@@ -50,16 +93,6 @@ nav {
 
 .cat {
     font-size: .7em;
-    color: #F4A261;
-}
-
-.sub {
-    font-weight: 200;
-}
-
-.card > .read {
-    font-size: .7em;
-    color:#264653;
 }
 
 .centered {
@@ -67,10 +100,17 @@ nav {
 }
 
 .tight {
-    letter-spacing: -.05em;
+    letter-spacing: -0.05em;
     word-spacing:-0.05em;
 }
 
+.tag {
+    line-height: 1.5em;
+}
+
+.red {
+    color: #f95959;
+}
 
 @media only screen and (min-width: 768px) {
     
@@ -78,17 +118,16 @@ nav {
         font-size: 18px;
     }
 
-    article {
-        font-size: 20px;
-        line-height: 2em;
+    p {
+        line-height: 1.8em;
     }
-
-    article > h1 { 
-        font-size: 2.4em;
+        
+    h1 { 
+        font-size: 3.4em;
     }
     
-    article > h2 {
-        font-size:  2em;
+    h2 {
+        font-size:  3em;
         font-weight: 400;
     }
   }
