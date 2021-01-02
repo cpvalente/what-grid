@@ -1,4 +1,6 @@
-@import "typography.css";
+@import "typography.css"; /* Typography */
+@import "style.css";      /* Design Elements */
+@import "card.css";       /* Card Specific */
 
 /* -------------- General Rules ---------------*/
 
@@ -37,91 +39,10 @@ main {
 /* Hide scrollbar for Chrome, Safari and Opera */
 .row::-webkit-scrollbar { display: none;}
 
-/* ---------- Design Specific - Card ----------*/
-
-.card {
-    opacity: 80%;
-    padding: 8px;
-    flex: 1 0 47%;
-    height: 32vh;
-    box-sizing: border-box;
-    border: #fffffc 1px solid;
-    overflow-wrap: break-word;
-
-    display: grid;
-    grid-template-rows: 10% 20% 60% 10%;
-    grid-template-areas:
-    "category"
-    "title"
-    "sub"
-    "read";
-
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s;
-}
-
-.card-title {
-    border-color: #111;
-}
-
-.card > .cat {
-    grid-area: category;
-}
-
-.card > .title {
-    grid-area: title;
-}
-
-.card > .sub {
-    grid-area: sub;
-}
-
-.card > .read {
-    grid-area: read;
-}
-
-.card > .blog-title {
-    grid-area: category / category / read / read;
-}
-
-footer {
-    background-color: #111;
-}
-
-footer > .blog-footer {
-    grid-area: category / category / sub / sub;
-}
-
-.card > .social {
-    grid-area: read;
-}
-
-.social-icons > img {
-    width: 20px;
-}
-
-.social-icons > img:hover {
-    filter: drop-shadow(0 2px 5px #fff);
-}
-
-.card:hover {
-    opacity: 100%;
-    transition: 0.3s;
-}
-
 /* --------------- Large Screens --------------*/
 
 @media only screen and (min-width: 768px) {
     .row {
         justify-content: center;
     }
-
-    .card {
-        flex: 0 0 32vh;
-    }
-
-    .social-icons > img {
-        width: 25px;
-    }
-  }
+}

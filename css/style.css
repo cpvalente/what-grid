@@ -1,0 +1,49 @@
+/* -------------- Design Elements -------------*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    background-color: rgba(255,255,255, .8);
+}
+
+button {
+    float: right;
+    margin-right: 2em;
+    background-color: #fffffc;
+    color: #f95959;
+    border: 1px solid #f95959;
+    border-radius: 1em;
+    width: 6em;
+    height: 1.5em;
+}
+
+button:hover {
+    background-color: #f95959;
+    color: #fff;
+    border-color:#f95959;
+    transition: .5s;
+}
+
+.social-icons > img {
+    width: 20px;
+}
+
+.social-icons > img:hover {
+    filter: drop-shadow(0 2px 5px #fff);
+}
+/* --------------- Large Screens --------------*/
+
+@media only screen and (min-width: 768px) {
+    .social-icons > img {
+        width: 25px;
+    }
+}
