@@ -74,8 +74,11 @@ small {
     font-size: 0.7em;
 }
 
+.medium {
+    font-weight: 400;
+}
+
 strong {
-    color: #222;
     font-weight: 600;
 }
 
