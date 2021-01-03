@@ -76,8 +76,22 @@ small {
     font-size: 0.7em;
 }
 
+i {
+    font-weight: 300;
+}
+
+b,
 strong {
     font-weight: 600;
+}
+
+u {
+
+}
+
+blockquote {
+    border-left: #F95959 1px solid;
+    padding-left: 1em;
 }
 
 /* -------------- Design Specific -------------*/
