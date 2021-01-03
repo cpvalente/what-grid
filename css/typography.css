@@ -94,6 +94,10 @@ blockquote {
     padding-left: 1em;
 }
 
+li {
+    list-style: none;
+}
+
 /* -------------- Design Specific -------------*/
 
 .white {
