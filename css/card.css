@@ -51,11 +51,15 @@ footer {
 }
 
 footer > .blog-footer {
-    grid-area: category / category / sub / sub;
+    grid-area: title / title / sub / sub;
 }
 
 .card > .social {
     grid-area: read;
+}
+
+.card-author > .title {
+    grid-area: category / category / read / read;
 }
 
 .card:hover {

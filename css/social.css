@@ -1,0 +1,27 @@
+/* Style all font awesome icons */
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    color: #fff;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background-color: #3B5998;
+}
+
+/* Twitter */
+.fa-twitter {
+    background-color: #55ACEE;
+}
+
+/* Linkedin */
+.fa-linkedin {
+    background-color: #0077B5;
+}

@@ -1,5 +1,6 @@
 @import "typography.css"; /* Typography */
 @import "style.css";      /* Design Elements */
+@import "social.css";     /* Social Icons */
 
 /* -------------- General Rules ---------------*/
 
@@ -73,6 +74,19 @@ article > * {
 .left-line {
     border-width: 0;
     border-left: 0.5px solid #F95959;
+}
+
+.row-small {
+    flex: 1 1 20%;
+    min-width: 75px;
+}
+
+.social-sharing {
+    margin-top: 1em;
+}
+
+.author {
+    margin-bottom: 0.4em;
 }
 
 /* --------------- Large Screens --------------*/
