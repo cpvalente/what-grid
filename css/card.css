@@ -5,6 +5,7 @@
     padding: 8px;
     flex: 1 0 47%;
     height: 30vh;
+    min-height: 50px;
     box-sizing: border-box;
     border: #fffffc 1px solid;
     overflow-wrap: break-word;
@@ -20,6 +21,10 @@
     justify-content: center;
     align-items: center;
     transition: 0.3s;
+}
+
+.card > * {
+    max-height: 100%;
 }
 
 .card-title {
@@ -73,8 +78,8 @@
 
 /* --------------- Large Screens --------------*/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (orientation:portrait) {
     .card {
-        flex: 0 0 32vh;
+        flex: 1 1 32vh;
     }
 }

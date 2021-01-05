@@ -91,7 +91,7 @@ article > * {
 
 /* --------------- Large Screens --------------*/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (orientation:portrait) {
     article {
         padding: 0 2em;
     }
