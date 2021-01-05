@@ -3,9 +3,8 @@
 .card {
     opacity: 80%;
     padding: 8px;
-    flex: 1 0 47%;
-    height: 30vh;
-    min-height: 50px;
+    flex: 1 0 29vh;
+    height: 32vh;
     box-sizing: border-box;
     border: #fffffc 1px solid;
     overflow-wrap: break-word;
@@ -53,6 +52,8 @@
 
 .author-name {
     background-color: #111;
+    justify-content: right;
+    padding-right: 1em;
 }
 
 .blog-footer {
@@ -67,10 +68,6 @@
     grid-area: category / category / read / read;
 }
 
-.card-image {
-    grid-area: title / title / read / read;
-}
-
 .card:hover {
     opacity: 100%;
     transition: 0.3s;
@@ -80,6 +77,6 @@
 
 @media only screen and (min-width: 768px) and (orientation:portrait) {
     .card {
-        flex: 1 1 32vh;
+        flex: 1 0 32vh;
     }
 }
