@@ -5,6 +5,10 @@ img {
     height: auto;
 }
 
+footer {
+    background-color: rgba(255,255,255, .8);
+}
+
 nav {
     overflow: hidden;
     position: fixed;

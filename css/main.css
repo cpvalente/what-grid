@@ -17,13 +17,14 @@ html {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1.5em 1fr 1fr 1fr 1.5em;
     grid-template-areas:
+    "flex-nav"
     "flex-top"
     "flex-mid"
-    "flex-bottom";
+    "flex-bottom"
+    "flex-footer";
     margin: 0;
-
 }
 
 .row {
@@ -38,6 +39,40 @@ main {
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .row::-webkit-scrollbar { display: none;}
+
+.nav-homepage {
+    grid-area: flex-nav;
+    padding: 2px 0 10px 0;
+    border-width: 0;
+    border-bottom: 0.5px solid #F95959;
+}
+
+.nav-homepage > a {
+    margin-right: 10px;
+    padding: 0 1em 0 1em;
+    border-radius: .3em;
+    background-color: #F95959 ;
+    color: #fff;
+}
+
+.row-top {
+    grid-area: flex-top;
+}
+
+.row-mid {
+    grid-area: flex-mid;
+}
+
+.row-bottom {
+    grid-area: flex-bottom;
+}
+
+.footer-homepage {
+    grid-area: flex-footer;
+    padding: 2px 0 0 0;
+    border-width: 0;
+    border-top: 0.5px solid #F95959;
+}
 
 /* --------------- Large Screens --------------*/
 

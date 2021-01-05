@@ -65,6 +65,8 @@ a:hover {
 
 footer {
     text-align: right;
+    font-size: .7em;
+    padding-right: 1em;
 }
 
 nav {
@@ -141,6 +143,16 @@ li {
 
 .cat {
     font-size: .7em;
+}
+
+.nav-homepage {
+    font-size: .7em;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.author-name {
+    text-align: right;
 }
 
 /* ---------- Design Specific - Post ----------*/

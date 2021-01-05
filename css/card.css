@@ -4,7 +4,7 @@
     opacity: 80%;
     padding: 8px;
     flex: 1 0 47%;
-    height: 32vh;
+    height: 30vh;
     box-sizing: border-box;
     border: #fffffc 1px solid;
     overflow-wrap: break-word;
@@ -46,11 +46,11 @@
     grid-area: category / category / read / read;
 }
 
-footer {
+.author-name {
     background-color: #111;
 }
 
-footer > .blog-footer {
+.blog-footer {
     grid-area: title / title / sub / sub;
 }
 
@@ -60,6 +60,10 @@ footer > .blog-footer {
 
 .card-author > .title {
     grid-area: category / category / read / read;
+}
+
+.card-image {
+    grid-area: title / title / read / read;
 }
 
 .card:hover {
